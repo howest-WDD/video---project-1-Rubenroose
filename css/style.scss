@@ -56,6 +56,7 @@ p {
   color: $color-dark-violet;
 }
 
+
 /*---------------------------------------/*
   # OBJECTS
 /*---------------------------------------*/
@@ -109,7 +110,15 @@ p {
       background-color: $color-light-violet;
       color: $color-white;
   }
+    &__button:active{
+      background-color: $color-light-violet;
+      color: $color-white;
+  }
+  &__bread{
+    line-height: 3rem;
+  }
 }
+
 
 .c-video{
     margin-top:4rem;
@@ -136,7 +145,7 @@ p {
     }
   }
   &__text{
-      line-height: 2rem;
+      line-height: 2.5rem;
   }
   &__strong{
       color: $color-light-violet;
@@ -189,7 +198,7 @@ p {
     }
     &__btn:hover{
         color: $color-white;
-        background-color: none;
+        background-color: $color-medium-violet;
         border-color: $color-light-violet;
         border-width: 1rem;
     }
@@ -199,6 +208,14 @@ p {
         align-items: center;
         padding-bottom: 2rem;
         padding-top: 2rem;
+    }
+    &__wrapper{
+      @media only screen and (max-width: 990px) {
+      margin-bottom: 2rem;
+      }
+    }
+    &__howest{
+      margin-left: 2rem;
     }
 }
 
@@ -214,14 +231,16 @@ p {
 .nav-link {
   color: $color-light-violet !important;
   font-weight: 300 !important;
+  transition: .2s;
   &:hover {
     color: $color-dark-violet !important;
     font-weight: 500 !important;
   }
-  &:active{
-    color: $color-dark-violet !important;
-    font-weight: 500 !important;   
-  }
+}
+
+.active{
+      color: $color-dark-violet !important;
+    font-weight: 500 !important;
 }
 
 

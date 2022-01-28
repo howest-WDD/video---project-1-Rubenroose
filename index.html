@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>komedia</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
@@ -24,40 +25,41 @@
           ></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto align-items-center">
+          <ul id="nav" class="navbar-nav ms-auto align-items-center">
             <li class="nav-item">
-              <a class="nav-link" href="#over">Over ons</a>
+              <a class="nav-link nav-link__over" aria-current="page" href="#over">Over ons</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#producten">Producten</a>
+              <a class="nav-link nav-link__over" href="#producten">Producten</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+              <a class="nav-link nav-link__over" aria-current="page" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
     <header class="c-header">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-6 c-header__img c-header__img--bg1"></div>
           <div class="col-lg-6 c-header__text">
             <h1 id="leer">De Winkel voor uw feest plezier!</h1>
-            <p>Kom en ontdek onze winkel vol met feest spullen en prullen om uw feest of evenement nog leuker te maken.</p>
+            <p class="c-header__bread">Kom en ontdek onze winkel vol met feest spullen en prullen om uw feest of evenement nog leuker te maken.</p>
             <a class="c-header__button" href="#producten"> Producten</a>
           </div>
         </div>
       </div>
     </header>
     <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <video src="assets/roose.ruben.mp4" class="c-video"  controls></video>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <video src="assets/roose.ruben.mp4" class="c-video" controls></video>
+          </div>
         </div>
+      </div>
       <div class="container">
         <section class="row align-items-center c-over">
           <div class="col-lg-6 c-over__over">
@@ -113,125 +115,135 @@
         </div>
       </div>
       <div class="container c-accordion">
-          <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h3 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-       Verkleedkleren
-      </button>
-    </h3>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-            <div class="row c-accordion__position">
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-                    <img src="assets/xl_2573-003.jpg.jpg" alt="kerst man" width="200">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Verkleedkleren</button>
+            </h3>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="row c-accordion__position">
+                  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <img src="assets/xl_2573-003.jpg.jpg" alt="kerst man" width="200" />
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <img src="assets/Kostuum_Sinterklaas_Kopen_1.jpeg" alt="sinterklaas" width="150" />
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <img src="assets/xl_141.jpeg" alt="zwarte piet" width="200" />
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <img src="assets/10_21512000000.jpeg" alt="60's vrouw" width="200" />
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <img src="assets/Bierheld_1.jpeg" alt="bier pak" width="150" />
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <img src="assets/xl_3065-004.jpeg" alt="maffia pak" width="200" />
+                  </div>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-                    <img src="assets/Kostuum_Sinterklaas_Kopen_1.jpeg" alt="sinterklaas" width="150">
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 ">
-                    <img src="assets/xl_141.jpeg" alt="zwarte piet" width="200">
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-                    <img src="assets/10_21512000000.jpeg" alt="60's vrouw" width="200">
-                </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-                    <img src="assets/Bierheld_1.jpeg" alt="bier pak" width="150">
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-                    <img src="assets/xl_3065-004.jpeg" alt="maffia pak" width="200">
-                </div>
+              </div>
             </div>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Accessoires
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-            <div class="row c-accordion__position">
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-                    <img src="assets/Bril_Bierglazen_1.jpeg" alt="bier bril" width="200">
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Accessoires</button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="row c-accordion__position">
+                  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <img src="assets/Bril_Bierglazen_1.jpeg" alt="bier bril" width="200" />
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <img src="assets/_Snor_En_Klein_Sikje_Zwart_1.jpeg" alt="fake snor" width="200" />
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <img src="assets/Armband_Met_Bolletjes_6.jpeg" alt="armbanden met bolletjes" width="200" />
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <img src="assets/Aureool_Rood_1.jpeg" alt="diadeen rood" width="200" />
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <img src="assets/Armband_Indiaan_1.jpeg" alt="indiaanse armband" width="150" />
+                  </div>
+                  <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <img src="assets/Kleurlenzen_Bella_1.jpeg" alt="kleur lens" width="200" />
+                  </div>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-                    <img src="assets/_Snor_En_Klein_Sikje_Zwart_1.jpeg" alt="fake snor" width="200">
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 ">
-                    <img src="assets/Armband_Met_Bolletjes_6.jpeg" alt="armbanden met bolletjes" width="200">
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-                    <img src="assets/Aureool_Rood_1.jpeg" alt="diadeen rood" width="200">
-                </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-                    <img src="assets/Armband_Indiaan_1.jpeg" alt="indiaanse armband" width="150">
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-                    <img src="assets/Kleurlenzen_Bella_1.jpeg" alt="kleur lens" width="200">
-                </div>
+              </div>
             </div>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Make-up
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-            <div class="row c-accordion__position">
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-                    <img src="assets/boek.jpeg" alt="make up boek" width="200">
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Make-up</button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="row c-accordion__position">
+                  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <img src="assets/boek.jpeg" alt="make up boek" width="200" />
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <img src="assets/makeupassortiment.png" alt="make up" width="200" />
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                    <img src="assets/make.jpeg" alt="make up set" width="200" />
+                  </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-                    <img src="assets/makeupassortiment.png" alt="make up" width="200">
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-                    <img src="assets/make.jpeg" alt="make up set" width="200">
-                </div>
+              </div>
             </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<footer class="c-footer" id="contact">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <h3>Contacteer ons</h3>
-                <p class="c-footer__text"><strong>Telefoon: </strong>0494 06 19 85</p>
-                <p class="c-footer__text"><strong>Email: </strong>info@komedia.be</p>
-                <p class="c-footer__text"><strong>Adres: </strong>Budastraat 13, 8500 Kortrijk</p>
-            </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <h3>Nieuwsbrief</h3>
-                    <input type="email" class="c-footer__form" placeholder="type hier uw email">
-                    <button class="c-footer__btn">Doe mee</button>
-                                    <p><a href="https://www.facebook.com/Komedia-248856991867680/"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#9678b6" class="bi bi-facebook" viewBox="0 0 16 16">
-                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                </svg></a></p>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <h3>Openingsuren</h3>
-                    <p class="c-footer__text"><strong>Maandag: </strong>gesloten</p>
-                    <p class="c-footer__text"><strong>Dinsdag-Zaterdag: </strong>10u tot 18u</p>
-                    <p class="c-footer__text"><strong>Zondag: </strong>gesloten</p>
-                </div>
-                <div class="col-12 c-footer__copyright">
-                    © 2020 Copyright: komedia 
-                    <img src="assets/HOWEST_01.png" alt="logo howest" width="100">
-                </div>
+          </div>
         </div>
-
-    </div>
-</footer>
+      </div>
+      <footer class="c-footer" id="contact">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-4 col-md-6 col-sm-12 c-footer__wrapper">
+              <h3>Contacteer ons</h3>
+              <p class="c-footer__text"><strong>Telefoon: </strong>0494 06 19 85</p>
+              <p class="c-footer__text"><strong>Email: </strong>info@komedia.be</p>
+              <p class="c-footer__text"><strong>Adres: </strong>Budastraat 13, 8500 Kortrijk</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 c-footer__wrapper">
+              <h3>Nieuwsbrief</h3>
+              <input type="email" class="c-footer__form" placeholder="type hier uw email" />
+              <button class="c-footer__btn">Doe mee</button>
+              <p>
+                <a href="https://www.facebook.com/Komedia-248856991867680/"
+                  ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#9678b6" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" /></svg
+                ></a>
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 c-footer__wrapper">
+              <h3>Openingsuren</h3>
+              <p class="c-footer__text"><strong>Maandag: </strong>gesloten</p>
+              <p class="c-footer__text"><strong>Dinsdag-Zaterdag: </strong>10u tot 18u</p>
+              <p class="c-footer__text"><strong>Zondag: </strong>gesloten</p>
+            </div>
+            <div class="col-12 c-footer__copyright">
+              © 2020 Copyright: komedia
+              <img src="assets/HOWEST_01.png" class="c-footer__howest" alt="logo howest" width="100" />
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
+    <script>
+      // Get the container element
+      var btnContainer = document.getElementById("nav");
+
+      var btns = btnContainer.getElementsByClassName("nav-link");
+
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
