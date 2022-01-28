@@ -1,0 +1,250 @@
+/*---------------------------------------/*
+  # SETTINGS
+/*---------------------------------------*/
+
+$color-light-violet: #9678b6;
+$color-medium-violet: #562e8b;
+$color-dark-violet: #351f58;
+$color-black: #180e24;
+$color-white: #f5f6f7;
+$spacing-default: 2rem;
+$title-font: "Island Moments", cursive;
+$text-font: "Roboto", sans-serif;
+/*---------------------------------------/*
+  # GENERIC
+/*---------------------------------------*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*---------------------------------------/*
+  # ELEMENTS
+/*---------------------------------------*/
+
+body {
+  font-family: $text-font;
+}
+
+h1 {
+  font-family: $title-font;
+  font-size: 4rem;
+  font-weight: 700;
+  color: $color-medium-violet;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: $title-font;
+  font-size: 3rem;
+  font-weight: 500;
+  color: $color-medium-violet;
+  margin-bottom: $spacing-default;
+}
+
+h3 {
+  font-family: $title-font;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: $color-dark-violet;
+}
+
+/*---------------------------------------/*
+  # OBJECTS
+/*---------------------------------------*/
+
+/*---------------------------------------/*
+  # COMPONENTS
+/*---------------------------------------*/
+.c-header {
+  background-image: linear-gradient(90deg, #562e8b 0%, #fff 50%);
+  @media only screen and (max-width: 990px) {
+    background-image: linear-gradient(180deg, #562e8b 0%, #fff 100%);
+  }
+  &__text {
+    margin-bottom: $spacing-default;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 12rem;
+    text-align: center;
+    @media only screen and (max-width: 990px) {
+      margin-top: 2rem;
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+  }
+  &__img {
+    min-height: 62rem;
+    @media only screen and (max-width: 990px) {
+      min-height: 32rem;
+    }
+    background-size: cover;
+    background-position: center center;
+
+    &--bg1 {
+      background-image: url("../assets/header.png");
+    }
+  }
+
+  &__button {
+      text-decoration: none;
+    background-color: $color-medium-violet;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    color: $color-white;
+    border-width: 0rem;
+    transition: .2s;
+  }
+  &__button:hover{
+      background-color: $color-light-violet;
+      color: $color-white;
+  }
+}
+
+.c-video{
+    margin-top:4rem;
+    margin-bottom: 4rem;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+.c-over {
+  &__over {
+    padding-right: 4rem;
+    @media only screen and (max-width: 990px) {
+      padding-right: 0;
+      text-align: center;
+    }
+  }
+  &__img {
+    min-height: 30rem;
+    background-size: cover;
+    background-position: center center;
+    &--bg1 {
+      background-image: url("../assets/Komedia.jpeg");
+    }
+  }
+  &__text{
+      line-height: 2rem;
+  }
+  &__strong{
+      color: $color-light-violet;
+      font-weight: 500;
+  }
+}
+
+.c-producten{
+    &__title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+    }
+}
+
+.c-accordion{
+    &__position{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media only screen and (max-width: 990px) {
+            padding-right: 0;
+            text-align: center;
+        }  
+    }
+}
+
+.c-footer{
+    margin-top: 4rem;
+    padding-top: 2rem;
+    background-color: $color-medium-violet;
+    color: $color-white;
+    &__text{
+        color: $color-white;
+    }
+    &__form{
+        padding: 0.5rem;
+        border: 0.3rem $color-light-violet
+    }
+    &__btn{
+        background-color: $color-light-violet;
+        color: $color-white;
+        border-radius: 0.3rem;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        border: none;
+        margin-bottom: 2rem;
+        transition: .5s;
+
+    }
+    &__btn:hover{
+        color: $color-white;
+        background-color: none;
+        border-color: $color-light-violet;
+        border-width: 1rem;
+    }
+    &__copyright{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+}
+
+/*---------------------------------------/*
+  # BOOTSTRAP
+/*---------------------------------------*/
+
+.navbar {
+  background-color: $color-white !important;
+  box-shadow: 0px 2px 20px 2px $color-black !important;
+}
+
+.nav-link {
+  color: $color-light-violet !important;
+  font-weight: 300 !important;
+  &:hover {
+    color: $color-dark-violet !important;
+    font-weight: 500 !important;
+  }
+  &:active{
+    color: $color-dark-violet !important;
+    font-weight: 500 !important;   
+  }
+}
+
+
+.accordion{
+    margin-top: 4rem;
+    &-button{
+        background-color: $color-light-violet !important;
+        color: $color-white !important;
+        border: 1rem;
+        border-color: $color-dark-violet;
+        font-size: 2.5rem;
+    }
+    &-icon-color{
+        color: $color-white;
+    }                   
+}
+
+.bi{
+    margin-right: 0.5rem;
+}
+
+
+
+/*---------------------------------------/*
+  # UTILITIES
+/*---------------------------------------*/
